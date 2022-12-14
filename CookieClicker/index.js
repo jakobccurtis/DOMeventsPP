@@ -7,6 +7,6 @@ counter = 0;
 
 cookie.addEventListener('click', () => {
     counter += 1;
-    console.log(`You've eaten ${cookieCounter} cookie`);
+    console.log(`You've eaten ${cookieCounter} cookie(s)`);
     cookieCounter.innerHTML = counter;
 })
