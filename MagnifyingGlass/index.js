@@ -1,22 +1,28 @@
-let bigger = document.body.querySelector("#bigger");
-let smaller = document.body.querySelector("#smaller");
+let text = document.body.querySelector('p');
+let size = 16
 
+let biggerButton = document.body.querySelector('#button1');
 
-
-bigger.addEventListener('click', () => {
-    if (bigger.style.fontSize >= 100) {
-        console.log("Error, max size 100px");
+biggerButton.addEventListener('click', () => {
+    if (size >= 1 && size <= 100) {
+        text.style.fontSize = `${size}px`;
+        size += 1;
+        console.log(size);
     }
     else {
-        bigger.style.fontSize += 1;
+        console.log('error');
     }
 })
 
-smaller.addEventListener('click', () => {
-    if (smaller.style.fontSize <= 1) {
-        console.log("Error, min size 1px");
+let smallerButton = document.body.querySelector('#button2');
+
+smallerButton.addEventListener('click', () => {
+    if (size >= 1 && size <= 100) {
+        text.style.fontSize = `${size}px`;
+        size -= 1;
+        console.log(size);
     }
     else {
-        smaller.style.fontSize -= 1;
+        console.log('error');
     }
 })
