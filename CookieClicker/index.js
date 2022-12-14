@@ -1,6 +1,6 @@
 let cookie = document.body.querySelector('img');
 
-cookie.style.height = "200px";
+
 
 let cookieCounter = document.body.querySelector('#cookieCounter');
 counter = 0;
