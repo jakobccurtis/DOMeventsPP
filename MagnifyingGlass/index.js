@@ -9,14 +9,20 @@ biggerButton.addEventListener('click', () => {
         size += 1;
         console.log(size);
     }
+    else {
+        console.log("Error: This font is too big!");
+    }
 })
 
 let smallerButton = document.body.querySelector('#button2');
 
 smallerButton.addEventListener('click', () => {
-    if (size >= 1 && size <= 100) {
+    if (size > 1 && size < 100) {
         text.style.fontSize = `${size}px`;
         size -= 1;
         console.log(size);
+    }
+    else {
+        console.log("Error: This font is too small!");
     }
 })
