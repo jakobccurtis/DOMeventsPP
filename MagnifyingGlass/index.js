@@ -1,13 +1,13 @@
 let text = document.body.querySelector('p');
-let size = 16
+let size = 99
 
 let biggerButton = document.body.querySelector('#button1');
 
 biggerButton.addEventListener('click', () => {
-    if (size > 1 && size < 100) {
+    if (size < 100) {
         text.style.fontSize = `${size}px`;
         size += 1;
-        console.log(size);
+        console.log(size)
     }
     else {
         console.log("Error")
@@ -20,7 +20,7 @@ smallerButton.addEventListener('click', () => {
     if (size > 1 && size < 100) {
         text.style.fontSize = `${size}px`;
         size -= 1;
-        console.log(size);
+        console.log(size)
     }
     else {
         console.log("Error")
