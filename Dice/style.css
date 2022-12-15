@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.dice {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    color: black;
+}
