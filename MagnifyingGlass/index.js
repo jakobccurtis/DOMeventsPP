@@ -1,5 +1,5 @@
 let text = document.body.querySelector('p');
-let size = 99
+let size = 16;
 
 let biggerButton = document.body.querySelector('#button1');
 
